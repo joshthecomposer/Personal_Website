@@ -1,0 +1,126 @@
+/* 00 Font imports */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+/* 01 Initalizers and Resets */
+
+:root {
+    font-size: 62.5%;
+}
+
+* {
+    margin: 0;
+    border: 0;
+    padding:  0;
+    box-sizing: border-box;
+    vertical-align: top;
+    /* outline: red 1px dashed; */
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: Roboto;
+    color: #e5e5e5;
+    background-color: #121212;
+}
+
+nav {
+    margin: 0 auto;
+    height: 8rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 2rem;
+    padding: 0 2rem;
+}
+
+nav a {
+    color: #e5e5e5;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: lightgray;
+}
+
+.navIcon {
+    height: 2.5rem;
+}
+header {
+    display: flex;
+    height: 28rem;
+    flex-direction: column;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+header a {
+    text-decoration: none;
+    color: #e5e5e5;
+}
+
+header a:hover {
+    /* text-decoration: underline; */
+    color: lightgray;
+}
+
+header h1 {
+    font-size: 5.2rem;
+}
+
+header h1:hover {
+    font-size: 5rem;
+}
+
+header p {
+    font-size: 2.5rem;
+}
+
+#hero {
+    width: auto;
+}
+
+#tagLine {
+    width: auto;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    margin-top: 3rem;
+    gap: 3rem;
+}
+
+main a {
+    text-decoration: none;
+    color: #e5e5e5;
+}
+
+main a h2:hover {
+    color: lightgray;
+}
+
+.row {
+    margin: 0 auto;
+    display: flex;
+    gap: 3rem;
+}
+
+.row h2 {
+    font-size: 2rem;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    width: 44rem;
+}
+
+main img:hover {
+    width: 43.5rem;
+    filter: invert(.8);
+}
+
