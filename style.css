@@ -46,19 +46,49 @@ nav a:hover {
 .navIcon {
     height: 2.5rem;
 }
+
+#github {
+    background-color: white;
+}
+
 header {
     display: flex;
-    height: 28rem;
+    /* position: fixed; */
+    height: 20rem;
     flex-direction: column;
     margin: 0 auto;
     align-items: center;
     justify-content: center;
     gap: 2rem;
+    /* background-color: #2a2a2a; */
+}
+
+button {
+	background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
 }
 
 header a {
     text-decoration: none;
     color: #e5e5e5;
+    /* background-color: #2a2a2a; */
+    border-radius: .9rem;
+    box-shadow: .5rem .5rem .5rem black;
+}
+
+header span {
+    color: #e5e5e5;
+    /* line-height: 1; */
+}
+
+#the {
+    border-radius: .9rem;
+    /* height: 4.7rem; */
 }
 
 header a:hover {
@@ -70,26 +100,135 @@ header h1 {
     font-size: 5.2rem;
 }
 
-header h1:hover {
+/* header h1:hover {
     font-size: 5rem;
-}
+} */
 
 header p {
-    font-size: 2.5rem;
+    font-size: 2.4rem;
 }
 
 #hero {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
     width: auto;
+    gap: 0;
+    box-shadow: .5rem .5rem .5rem black;
+    border-radius: .9rem;
+    padding: 0 .9rem;
 }
 
 #tagLine {
     width: auto;
 }
 
+/* Audio nav */
+
+.audioNav {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 5rem;
+    gap: 1rem;
+}
+
+#audioContainer {
+    display: flex;
+    margin: 0 auto;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-end;
+
+}
+
+.playerBtn {
+    height: 2.5rem;
+    width: 2.5rem;
+}
+
+.playerBtn:hover {
+    height: 2.4rem;
+    width: 2.4rem;
+    filter:brightness(10);
+}
+
+.soundControls {
+    display: flex;
+    align-items: flex-end;
+    gap: .5rem;
+}
+
+.plusMinus {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(3.8px);
+}
+
+#soundIcon {
+    height: 2.5rem;
+    width: 2.5rem;
+}
+
+#soundIcon:hover {
+    height: 2.6rem;
+    width: 2.6rem;
+}
+
+#muteIcon {
+    height: 2.5rem;
+    width: 2.5rem;
+}
+
+#muteIcon:hover {
+    height: 2.6rem;
+    width: 2.6rem;
+}
+
+#volPlus {
+    height: 1.4rem;
+    width: 1.4rem;
+}
+
+#volMinus {
+    height: 1.4rem;
+    width: 1.4rem;
+}
+
+#volPlus:hover {
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+#volMinus:hover {
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+.progBarBox {
+    /* display: flex; */
+    margin: 0 auto;
+    justify-items: left;
+    width: 40rem;
+    height: 2px;
+}
+
+.progBar {
+    background-color: #e5e5e5;
+    height: 3px;
+    width: 0;
+}
+
+/* MAIN SECTION */
+
 main {
     display: flex;
     flex-direction: column;
-    margin-top: 3rem;
+    /* margin-top: 3rem; */
+    margin-bottom: 20rem;
     gap: 3rem;
 }
 
@@ -106,6 +245,7 @@ main a h2:hover {
     margin: 0 auto;
     display: flex;
     gap: 3rem;
+    flex-wrap: wrap;
 }
 
 .row h2 {
@@ -119,8 +259,56 @@ main a h2:hover {
     width: 44rem;
 }
 
+.imgContain {
+    display: flex;
+    overflow: hidden;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height:29.33rem;
+    background-color: black;
+}
+
+.imgContain:hover {
+    width: 43.5rem;
+    filter: invert(.8);
+    cursor: pointer;
+}
+
+#python {
+    width: 10rem;
+}
+
+#node {
+    width: 30rem;
+}
+
+#fmod {
+    width: 30rem;
+}
+
+#ae {
+    width: 10rem;
+}
+
+#python:hover {
+    filter: none;
+    width: 10rem;
+}
+
+#node:hover {
+    filter: none;
+}
+
+#fmod:hover {
+    filter: none;
+}
+
+#ae:hover {
+    filter: none;
+}
+
 main img:hover {
     width: 43.5rem;
     filter: invert(.8);
 }
-

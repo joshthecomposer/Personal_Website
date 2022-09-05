@@ -5,45 +5,60 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style.css">
-    <title>josh the composer</title>
+    <title>JoshTheComposer</title>
 </head>
 <body>
     <nav>
         <a href="#">Home</a>
+        <a href="#">Bio</a>
+        <a href="#">Resume</a>
+        <a href="https://github.com/joshthecomposer"><img src="./img/github.png" alt="linkedin" class="navIcon"></a>
         <a href="https://www.linkedin.com/in/joshua-d-wise-6ba8ab247/"><img src="./img/linkedin.png" alt="linkedin" class="navIcon"></a>
         <a href="https://twitter.com/JoshuaWise_"><img src="./img/twitter.png" alt="twitter" class="navIcon"></a>
         <a href="https://www.instagram.com/joshthecomposer/"><img src="./img/instagram.png" alt="instagram" class="navIcon"></a>
     </nav>
     <header>
         <div class="row">
-            <div class="box" id="hero">
-                <a href="#"><h1>josh the composer</h1></a>
-            </div>
+            <button class="btn" onclick="careerToggle()">
+                <div class="box" id="hero">
+                        <div><h1>Josh</h1></div>
+                        <div id="the"><h1><span>The</span></h1></div>
+                        <div><h1 id="composer">Composer</h1></div>
+                        <!-- <div id="developer" style="display:none"><h1>Developer</h1></div> -->
+                </div>
+            </button>
             <div class="box">
             </div>
         </div>
         <div class="row">
             <div class="box" id="tagLine">
-                <p><em>music architect | software orchestrator | sound manipulator</em></p>
-            </div>
-        </div>
-        <div class="row">
-            <div class="box" id="audiocontainer">
-                <audio id="player" src="./audio/Obelisk in the Sky - For Spotify-01.wav"></audio>
-                <div class="box">
-                    <button onclick="audioPlay()">Play</button> 
-                    <button onclick="audioPause()">Pause</button> 
-                    <button onclick="audioVolumePlus()">Vol +</button> 
-                    <button onclick="audioVolumeMinus()">Vol -</button>
-                </div>
+                <p><em>software developer | musician</em></p>
             </div>
         </div>
     </header>
     <main>
+        <div class="audioNav">
+            <div class="box" id="audioContainer">
+                <audio id="player" src="./audio/obelisk.wav"></audio>
+                    <input type="image" src="./img/play.png" id="play" class="playerBtn" onclick="audioPlay()">
+                    <input type="image" src="./img/pause.png" id="pause" class="playerBtn" onclick="audioPause()">
+                    <div class="soundControls" id="soundControls" class="playerBtn">
+                        <input type="image" src="./img/sound-icon.png" id="soundIcon" class="" onclick="audioMute()">
+                        <input type="image" src="./img/sound-muted.png" id="muteIcon" class="" onclick="audioMute()" style="display:none">
+                        <div class="plusMinus">
+                            <input type="image" src="./img/plus.png" id="volPlus" class="" onclick="audioVolumePlus()">
+                            <input type="image" src="./img/minus.png" id="volMinus" class="" onclick="audioVolumeMinus()">
+                        </div>
+                    </div>
+            </div>
+            <div id="progBarBox" class="progBarBox">
+                <div class="progBar" id="progBar"></div>
+            </div>
+        </div>
         <div class="row">
             <div class="box">
-                <a href=""><img src="./img/fmod.png" alt="FMOD" class="box"></a>
-                <a href=""><h2>Dynamic Game Music using C# and middleware</h2></a>
+                <div class="imgContain"><img src="./img/fmod.png" id='fmod' alt="FMOD" class="box"></div>
+                <a href=""><h2>View Portfolio: Dynamic Game Music</h2></a>
             </div>
             <div class="box">
                 <a href=""><img src="./img/bike.png" alt="FMOD" class="box"></a>
@@ -52,6 +67,26 @@
         </div>
         <div class="row">
             <div class="box">
+                <img src="./img/VIKING.png" alt="VIKING" class="box">
+                <a href=""><h2>Listen: Dark Fantasy and Orchestral music</h2></a>
+            </div>
+            <div class="box">
+                <div class="imgContain"><img src="./img/python-128.png" id="python" alt="python" class="box"></div>
+                <a href=""><h2>View Portfolio: Python | Django | Flask</h2></a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="box">
+                <a href="https://joshthecomposer.github.io/"><div class="imgContain"><img src="./img/nodeJS.png" id="node" alt="nodJS" class="box"></div></a>
+                <a href="https://joshthecomposer.github.io/"><h2>View Portfolio: JavaScript | Node.Js | jQuery</h2></a>
+            </div>
+            <div class="box">
+                <div class="imgContain"><img src="./img/after-effects.png" id="ae" alt="ae" class="box"></div>
+                <a href=""><h2>View Portfolio: 2D Animation | Premiere Editing</h2></a>
+            </div>
+        </div>
+        <!-- <div class="row">
+            <div class="box">
                 <img src="./img/fmod.png" alt="FMOD" class="box">
                 <a href=""><h2>Dynamic Game Music using C# and middleware</h2></a>
             </div>
@@ -70,7 +105,7 @@
                 <a href=""><h2>Dynamic Game Music using C# and middleware</h2></a>
             </div>
         </div>
-    </main>
+    </main> -->
 
     <script type="text/javascript" src="script.js"></script>
 </body>
